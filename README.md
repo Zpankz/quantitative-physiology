@@ -71,4 +71,18 @@ anything that cannot be grounded without fabricating corpus is recorded as an
 evidenced rejection rather than stubbed. See `qp/ROADMAP_LEDGER.md` and
 `qp/QPM_ASSESSMENT.md`.
 
+## Orthogonal context
+
+[`context/obsidian-voice-context.md`](context/obsidian-voice-context.md) is a
+separate, provenance-labelled retrieval artifact for an Obsidian voice plugin:
+definitions, schemas, diagrams, and equation-synthesis notes extracted from live
+teaching sessions and vault sources (e.g. the Stewart strong-ion acid-base
+approach). Each item carries its source anchor and a provenance class
+(extracted / inferred / assumed / session-only), with uncertainty preserved.
+
+It is deliberately **outside** the canonical registry — it does not add to,
+merge with, or alter the 367 equations, and is never imported by `qp/` or `qpm/`.
+Anything promoted from it must re-enter through qp's normal grounded authoring and
+acceptance gate.
+
 *Source: Joseph J. Feher, Quantitative Human Physiology: An Introduction, 3rd ed.*
