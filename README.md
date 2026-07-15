@@ -2,7 +2,9 @@
 
 A tested, importable library of the reusable quantitative models from Feher's
 *Quantitative Human Physiology, 3rd ed.*, built for CICM / ANZCA Primary Exam
-reasoning. Every equation is an `AtomicEquation` object — a compute function with
+reasoning — spanning cardiovascular, respiratory, renal, membrane, endocrine and
+cross-cutting acid–base physiology (Henderson–Hasselbalch, anion gap, Stewart
+strong-ion difference). Every equation is an `AtomicEquation` object — a compute function with
 declared parameters, units, dependencies, and Feher provenance — not just a formula
 in prose. The value is not a bag of equations but an **integrated, queryable
 network**: seed a few bedside numbers and the graph fills in the rest.
