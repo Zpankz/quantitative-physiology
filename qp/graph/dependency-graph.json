@@ -1,0 +1,3970 @@
+{
+  "metadata": {
+    "generated_by": "scripts/generate_graph.py",
+    "do_not_edit_by_hand": true,
+    "total_equations": 367,
+    "total_dependency_edges": 148,
+    "num_topological_layers": 5,
+    "cycles_detected": []
+  },
+  "equations": {
+    "aa_gradient": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.gas_exchange",
+      "object": "aa_gradient",
+      "depends_on": [
+        "alveolar_gas_equation"
+      ],
+      "used_by": [],
+      "layer": 3
+    },
+    "aa_gradient_age_limit": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.gas_exchange",
+      "object": "aa_gradient_age_limit_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "acoustic_intensity": {
+      "domain": "nervous",
+      "module": "scripts.nervous.hearing",
+      "object": "acoustic_intensity",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "actual_free_energy": {
+      "domain": "foundations",
+      "module": "scripts.foundations.thermodynamics",
+      "object": "actual_free_energy",
+      "depends_on": [
+        "standard_free_energy"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "acute_respiratory_acidosis_hco3": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "acute_respiratory_acidosis_hco3_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "acute_respiratory_alkalosis_hco3": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "acute_respiratory_alkalosis_hco3_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "acute_respiratory_ph_change": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "acute_respiratory_ph_change",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "adaptation_index": {
+      "domain": "nervous",
+      "module": "scripts.nervous.sensory",
+      "object": "adaptation_index",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "adh_water_permeability": {
+      "domain": "renal",
+      "module": "scripts.renal.concentration",
+      "object": "adh_water_permeability",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "airway_resistance": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "airway_resistance",
+      "depends_on": [],
+      "used_by": [
+        "pressure_flow",
+        "respiratory_time_constant"
+      ],
+      "layer": 0
+    },
+    "aldosterone_regulation": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.adrenal",
+      "object": "aldosterone_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "alpha_function": {
+      "domain": "nervous",
+      "module": "scripts.nervous.synaptic",
+      "object": "alpha_function",
+      "depends_on": [],
+      "used_by": [
+        "epsp_amplitude",
+        "synaptic_current"
+      ],
+      "layer": 0
+    },
+    "alveolar_gas_equation": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.gas_exchange",
+      "object": "alveolar_gas_equation",
+      "depends_on": [
+        "alveolar_pco2_equation",
+        "inspired_po2"
+      ],
+      "used_by": [
+        "aa_gradient"
+      ],
+      "layer": 2
+    },
+    "alveolar_pco2_equation": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.gas_exchange",
+      "object": "alveolar_pco2_equation",
+      "depends_on": [],
+      "used_by": [
+        "alveolar_gas_equation"
+      ],
+      "layer": 0
+    },
+    "alveolar_ventilation": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.volumes",
+      "object": "alveolar_ventilation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "amylase_kinetics": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.digestion",
+      "object": "amylase_kinetics",
+      "depends_on": [
+        "gi_enzyme_kinetics"
+      ],
+      "used_by": [
+        "starch_digestion_first_order"
+      ],
+      "layer": 1
+    },
+    "anion_gap": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "anion_gap",
+      "depends_on": [],
+      "used_by": [
+        "corrected_anion_gap",
+        "delta_ratio"
+      ],
+      "layer": 0
+    },
+    "apparent_volume_of_distribution": {
+      "domain": "foundations",
+      "module": "scripts.foundations.kinetics",
+      "object": "apparent_volume_of_distribution_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "architectural_gear_ratio": {
+      "domain": "excitable",
+      "module": "scripts.excitable.muscle",
+      "object": "architectural_gear_ratio",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "arrhenius_equation": {
+      "domain": "foundations",
+      "module": "scripts.foundations.kinetics",
+      "object": "arrhenius_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "arterial_elastance": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.cardiac",
+      "object": "arterial_elastance",
+      "depends_on": [
+        "espvr",
+        "stroke_volume"
+      ],
+      "used_by": [
+        "va_coupling_esv"
+      ],
+      "layer": 1
+    },
+    "atp_consumption": {
+      "domain": "excitable",
+      "module": "scripts.excitable.energetics",
+      "object": "atp_consumption_eq",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "average_steady_state_concentration": {
+      "domain": "foundations",
+      "module": "scripts.foundations.kinetics",
+      "object": "average_steady_state_concentration_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "baroreceptor_sensitivity": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.microcirculation",
+      "object": "baroreceptor_sensitivity",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "basal_metabolic_rate": {
+      "domain": "membrane",
+      "module": "scripts.membrane.metabolism",
+      "object": "basal_metabolic_rate",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "base_excess_van_slyke": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "base_excess_van_slyke",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "bcm_theory": {
+      "domain": "nervous",
+      "module": "scripts.nervous.plasticity",
+      "object": "bcm_theory",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "beer_lambert_attenuation": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.calcium",
+      "object": "beer_lambert_attenuation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "bernoulli_equivalent_pressure": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "bernoulli_equivalent_pressure",
+      "depends_on": [
+        "mean_flow_velocity"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "bile_acid_synthesis": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.secretion",
+      "object": "bile_acid_synthesis",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "bilirubin_production": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.liver",
+      "object": "bilirubin_production",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "bioavailability_auc": {
+      "domain": "foundations",
+      "module": "scripts.foundations.kinetics",
+      "object": "bioavailability_auc_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "blood_oxygen_content": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.blood",
+      "object": "oxygen_content",
+      "depends_on": [],
+      "used_by": [
+        "cardiac_output_fick",
+        "systemic_oxygen_delivery"
+      ],
+      "layer": 0
+    },
+    "blood_viscosity": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.blood",
+      "object": "blood_viscosity",
+      "depends_on": [
+        "hematocrit"
+      ],
+      "used_by": [
+        "poiseuille_resistance",
+        "reynolds_number_blood",
+        "womersley_number"
+      ],
+      "layer": 1
+    },
+    "body_energy_balance": {
+      "domain": "foundations",
+      "module": "scripts.foundations.thermodynamics",
+      "object": "body_energy_balance",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "body_surface_area_dubois": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.cardiac",
+      "object": "body_surface_area",
+      "depends_on": [],
+      "used_by": [
+        "cardiac_index",
+        "gfr_normalized"
+      ],
+      "layer": 0
+    },
+    "boyle_vant_hoff_relation": {
+      "domain": "membrane",
+      "module": "scripts.membrane.osmosis",
+      "object": "boyle_vant_hoff_relation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "bramwell_hill_pwv": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "bramwell_hill",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "ca_force_relationship": {
+      "domain": "excitable",
+      "module": "scripts.excitable.muscle",
+      "object": "ca_force_relationship_eq",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "ca_release_cooperative": {
+      "domain": "nervous",
+      "module": "scripts.nervous.synaptic",
+      "object": "ca_release_cooperative",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "cable_equation": {
+      "domain": "excitable",
+      "module": "scripts.excitable.action_potential",
+      "object": "cable_equation_eq",
+      "depends_on": [
+        "membrane_time_constant",
+        "space_constant"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "cable_equation_dendrite": {
+      "domain": "nervous",
+      "module": "scripts.nervous.integration",
+      "object": "cable_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "calcium_absorption_gi": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.absorption",
+      "object": "calcium_absorption",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "calcium_albumin_correction": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.calcium",
+      "object": "corrected_calcium_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "calcium_pth_secretion": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.calcium",
+      "object": "pth_secretion_equation",
+      "depends_on": [],
+      "used_by": [
+        "calcium_vitamin_d_activation"
+      ],
+      "layer": 0
+    },
+    "calcium_vitamin_d_activation": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.calcium",
+      "object": "vitamin_d_activation_equation",
+      "depends_on": [
+        "calcium_pth_secretion"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "capacitance": {
+      "domain": "foundations",
+      "module": "scripts.foundations.electrical",
+      "object": "capacitance",
+      "depends_on": [],
+      "used_by": [
+        "parallel_plate_capacitor"
+      ],
+      "layer": 0
+    },
+    "capillary_pressure": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.microcirculation",
+      "object": "capillary_pressure",
+      "depends_on": [],
+      "used_by": [
+        "net_filtration_pressure",
+        "starling_filtration"
+      ],
+      "layer": 0
+    },
+    "carbohydrate_oxidation_indirect_calorimetry": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.energy_balance",
+      "object": "carbohydrate_oxidation_indirect_calorimetry",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "cardiac_index": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.cardiac",
+      "object": "cardiac_index",
+      "depends_on": [
+        "body_surface_area_dubois",
+        "cardiac_output",
+        "cardiac_output_fick",
+        "indicator_dilution_cardiac_output"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "cardiac_output": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.cardiac",
+      "object": "cardiac_output",
+      "depends_on": [
+        "heart_rate_autonomic",
+        "stroke_volume"
+      ],
+      "used_by": [
+        "cardiac_index",
+        "map_from_flow",
+        "pvr_dyn",
+        "svr_dyn",
+        "systemic_oxygen_delivery",
+        "total_peripheral_resistance"
+      ],
+      "layer": 1
+    },
+    "cardiac_output_fick": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.cardiac",
+      "object": "cardiac_output_fick",
+      "depends_on": [
+        "blood_oxygen_content",
+        "mixed_venous_oxygen_content"
+      ],
+      "used_by": [
+        "cardiac_index",
+        "map_from_flow",
+        "pvr_dyn",
+        "svr_dyn",
+        "systemic_oxygen_delivery",
+        "total_peripheral_resistance"
+      ],
+      "layer": 1
+    },
+    "carrier_transport": {
+      "domain": "membrane",
+      "module": "scripts.membrane.transport",
+      "object": "carrier_transport",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "cck_response": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.hormones",
+      "object": "cck_response",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "cck_satiety": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.hormones",
+      "object": "cck_satiety",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "chemiosmotic_coupling": {
+      "domain": "membrane",
+      "module": "scripts.membrane.metabolism",
+      "object": "chemiosmotic_coupling",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "cheng_prusoff_ki": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.receptor",
+      "object": "cheng_prusoff_ki",
+      "depends_on": [
+        "hormone_kd"
+      ],
+      "used_by": [
+        "competitive_inhibition_binding"
+      ],
+      "layer": 1
+    },
+    "chord_conductance": {
+      "domain": "excitable",
+      "module": "scripts.excitable.membrane_potential",
+      "object": "chord_conductance_eq",
+      "depends_on": [
+        "k_nernst_potential",
+        "nernst_equation"
+      ],
+      "used_by": [],
+      "layer": 3
+    },
+    "chronic_respiratory_acidosis_hco3": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "chronic_respiratory_acidosis_hco3",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "chronic_respiratory_alkalosis_hco3": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "chronic_respiratory_alkalosis_hco3",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "ckd_epi_2021": {
+      "domain": "renal",
+      "module": "scripts.renal.clearance",
+      "object": "ckd_epi_2021_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "clearance": {
+      "domain": "renal",
+      "module": "scripts.renal.clearance",
+      "object": "clearance",
+      "depends_on": [],
+      "used_by": [
+        "fractional_excretion",
+        "true_rpf_from_pah"
+      ],
+      "layer": 0
+    },
+    "clearance_from_metabolic_rate": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.kinetics",
+      "object": "clearance_from_metabolic_rate",
+      "depends_on": [
+        "metabolic_clearance_rate"
+      ],
+      "used_by": [
+        "hormone_half_life_from_mcr"
+      ],
+      "layer": 1
+    },
+    "co2_response": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.ventilatory_control",
+      "object": "co2_response",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "cockcroft_gault": {
+      "domain": "renal",
+      "module": "scripts.renal.clearance",
+      "object": "cockcroft_gault",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "colloid_osmotic_pressure": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.microcirculation",
+      "object": "colloid_osmotic_pressure",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "competitive_inhibition_binding": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.receptor",
+      "object": "competitive_inhibition_binding",
+      "depends_on": [
+        "cheng_prusoff_ki",
+        "hormone_kd"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "compliance": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "compliance",
+      "depends_on": [],
+      "used_by": [
+        "elastance",
+        "respiratory_time_constant",
+        "total_compliance"
+      ],
+      "layer": 0
+    },
+    "convection_diffusion_flux": {
+      "domain": "foundations",
+      "module": "scripts.foundations.diffusion",
+      "object": "convection_diffusion_flux",
+      "depends_on": [
+        "volume_flux"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "coronary_perfusion_pressure": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "coronary_perfusion_pressure_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "corrected_anion_gap": {
+      "domain": "renal",
+      "module": "scripts.renal.acid_base",
+      "object": "corrected_anion_gap",
+      "depends_on": [
+        "anion_gap"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "coulomb_law": {
+      "domain": "foundations",
+      "module": "scripts.foundations.electrical",
+      "object": "coulomb_law",
+      "depends_on": [],
+      "used_by": [
+        "coulomb_law_medium",
+        "dipole_potential",
+        "electric_field"
+      ],
+      "layer": 0
+    },
+    "coulomb_law_medium": {
+      "domain": "foundations",
+      "module": "scripts.foundations.electrical",
+      "object": "coulomb_law_medium",
+      "depends_on": [
+        "coulomb_law"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "countercurrent_multiplication": {
+      "domain": "renal",
+      "module": "scripts.renal.concentration",
+      "object": "countercurrent_multiplication",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "creatinine_clearance_typed": {
+      "domain": "renal",
+      "module": "scripts.renal.clearance",
+      "object": "creatinine_clearance_typed",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "critical_micellar_concentration": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.secretion",
+      "object": "critical_micellar_concentration",
+      "depends_on": [],
+      "used_by": [
+        "fat_absorption_efficiency",
+        "lipase_activity_bile"
+      ],
+      "layer": 0
+    },
+    "dead_space_bohr": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.vq_matching",
+      "object": "dead_space_bohr",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "delta_ratio": {
+      "domain": "renal",
+      "module": "scripts.renal.acid_base",
+      "object": "delta_ratio",
+      "depends_on": [
+        "anion_gap"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "dendrite_input_resistance": {
+      "domain": "nervous",
+      "module": "scripts.nervous.integration",
+      "object": "dendrite_input_resistance",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "depression": {
+      "domain": "nervous",
+      "module": "scripts.nervous.plasticity",
+      "object": "depression",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "diffusing_capacity": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.gas_exchange",
+      "object": "diffusing_capacity",
+      "depends_on": [],
+      "used_by": [
+        "diffusion_conductance",
+        "dlco_to_dlo2"
+      ],
+      "layer": 0
+    },
+    "diffusion_conductance": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.gas_exchange",
+      "object": "diffusion_conductance",
+      "depends_on": [
+        "diffusing_capacity"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "diffusion_time": {
+      "domain": "foundations",
+      "module": "scripts.foundations.diffusion",
+      "object": "diffusion_time",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "dipole_potential": {
+      "domain": "foundations",
+      "module": "scripts.foundations.electrical",
+      "object": "dipole_potential",
+      "depends_on": [
+        "coulomb_law"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "direction_selectivity_index": {
+      "domain": "nervous",
+      "module": "scripts.nervous.sensory",
+      "object": "direction_selectivity_index",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "dissolved_co2": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.co2_transport",
+      "object": "dissolved_co2",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "dlco_to_dlo2": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.gas_exchange",
+      "object": "dlco_to_dlo2",
+      "depends_on": [
+        "diffusing_capacity"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "donnan_potential": {
+      "domain": "membrane",
+      "module": "scripts.membrane.potential",
+      "object": "donnan_potential",
+      "depends_on": [
+        "donnan_ratio"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "donnan_ratio": {
+      "domain": "membrane",
+      "module": "scripts.membrane.potential",
+      "object": "donnan_ratio",
+      "depends_on": [],
+      "used_by": [
+        "donnan_potential"
+      ],
+      "layer": 0
+    },
+    "double_exponential_synapse": {
+      "domain": "nervous",
+      "module": "scripts.nervous.synaptic",
+      "object": "double_exponential",
+      "depends_on": [],
+      "used_by": [
+        "epsp_amplitude",
+        "synaptic_current"
+      ],
+      "layer": 0
+    },
+    "driving_force_ion": {
+      "domain": "excitable",
+      "module": "scripts.excitable.membrane_potential",
+      "object": "driving_force_ion",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "driving_pressure": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "driving_pressure",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "dynamic_compliance": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "dynamic_compliance_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "edpvr": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.cardiac",
+      "object": "edpvr",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "einthoven_lead_relation": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.ecg",
+      "object": "einthoven_lead_relation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "ejection_fraction": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.cardiac",
+      "object": "ejection_fraction",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "elastance": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "elastance",
+      "depends_on": [
+        "compliance"
+      ],
+      "used_by": [
+        "total_elastance"
+      ],
+      "layer": 1
+    },
+    "electric_dipole_moment": {
+      "domain": "foundations",
+      "module": "scripts.foundations.electrical",
+      "object": "electric_dipole_moment",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "electric_field": {
+      "domain": "foundations",
+      "module": "scripts.foundations.electrical",
+      "object": "electric_field",
+      "depends_on": [
+        "coulomb_law"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "electrochemical_potential": {
+      "domain": "foundations",
+      "module": "scripts.foundations.thermodynamics",
+      "object": "electrochemical_potential",
+      "depends_on": [
+        "gibbs_free_energy"
+      ],
+      "used_by": [
+        "nernst_equation"
+      ],
+      "layer": 1
+    },
+    "elimination_rate_constant": {
+      "domain": "foundations",
+      "module": "scripts.foundations.kinetics",
+      "object": "elimination_rate_constant",
+      "depends_on": [],
+      "used_by": [
+        "first_order_elimination"
+      ],
+      "layer": 0
+    },
+    "energy_expenditure_indirect_calorimetry": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.energy_balance",
+      "object": "energy_expenditure_indirect_calorimetry",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "enthalpy": {
+      "domain": "foundations",
+      "module": "scripts.foundations.thermodynamics",
+      "object": "enthalpy",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "epsp_amplitude": {
+      "domain": "nervous",
+      "module": "scripts.nervous.synaptic",
+      "object": "epsp_amplitude",
+      "depends_on": [
+        "alpha_function",
+        "double_exponential_synapse"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "espvr": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.cardiac",
+      "object": "espvr",
+      "depends_on": [],
+      "used_by": [
+        "arterial_elastance"
+      ],
+      "layer": 0
+    },
+    "excretion_mass_balance": {
+      "domain": "renal",
+      "module": "scripts.renal.tubular",
+      "object": "excretion_mass_balance",
+      "depends_on": [
+        "filtered_load",
+        "gfr_from_nfp"
+      ],
+      "used_by": [],
+      "layer": 4
+    },
+    "exponential_emptying": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "exponential_emptying",
+      "depends_on": [
+        "respiratory_time_constant"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "extraction_ratio": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.liver",
+      "object": "extraction_ratio",
+      "depends_on": [],
+      "used_by": [
+        "first_pass_effect",
+        "hepatic_clearance"
+      ],
+      "layer": 0
+    },
+    "facilitation": {
+      "domain": "nervous",
+      "module": "scripts.nervous.plasticity",
+      "object": "facilitation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "fat_absorption_efficiency": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.absorption",
+      "object": "fat_absorption_efficiency",
+      "depends_on": [
+        "critical_micellar_concentration",
+        "lipase_activity_bile"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "fat_oxidation_indirect_calorimetry": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.energy_balance",
+      "object": "fat_oxidation_indirect_calorimetry",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "fe_na": {
+      "domain": "renal",
+      "module": "scripts.renal.tubular",
+      "object": "fe_na",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "fe_urea": {
+      "domain": "renal",
+      "module": "scripts.renal.tubular",
+      "object": "fe_urea",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "fechner_law": {
+      "domain": "nervous",
+      "module": "scripts.nervous.sensory",
+      "object": "fechner_law",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "feedback_gain": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.feedback",
+      "object": "feedback_gain_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "feedback_target_dynamics": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.feedback",
+      "object": "target_feedback_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "feedback_tropic_dynamics": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.feedback",
+      "object": "tropic_feedback_equation",
+      "depends_on": [],
+      "used_by": [
+        "thyroid_tsh_response"
+      ],
+      "layer": 0
+    },
+    "fev1_fvc_ratio": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "fev1_fvc_ratio",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "fick_first_law": {
+      "domain": "foundations",
+      "module": "scripts.foundations.diffusion",
+      "object": "fick_first_law",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "ficks_law_diffusion": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.microcirculation",
+      "object": "ficks_law_diffusion",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "ficks_membrane_flux": {
+      "domain": "membrane",
+      "module": "scripts.membrane.transport",
+      "object": "ficks_membrane_flux",
+      "depends_on": [
+        "permeability_coefficient"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "filtered_load": {
+      "domain": "renal",
+      "module": "scripts.renal.clearance",
+      "object": "filtered_load",
+      "depends_on": [
+        "gfr_from_nfp"
+      ],
+      "used_by": [
+        "excretion_mass_balance",
+        "glucose_excretion"
+      ],
+      "layer": 3
+    },
+    "filtration_fraction": {
+      "domain": "renal",
+      "module": "scripts.renal.blood_flow",
+      "object": "filtration_fraction",
+      "depends_on": [
+        "gfr_from_nfp"
+      ],
+      "used_by": [],
+      "layer": 3
+    },
+    "first_order_elimination": {
+      "domain": "foundations",
+      "module": "scripts.foundations.kinetics",
+      "object": "first_order_elimination",
+      "depends_on": [
+        "elimination_rate_constant"
+      ],
+      "used_by": [
+        "loading_dose"
+      ],
+      "layer": 1
+    },
+    "first_pass_effect": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.liver",
+      "object": "first_pass_effect",
+      "depends_on": [
+        "extraction_ratio"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "fractional_excretion": {
+      "domain": "renal",
+      "module": "scripts.renal.tubular",
+      "object": "fractional_excretion",
+      "depends_on": [
+        "clearance",
+        "gfr_from_nfp"
+      ],
+      "used_by": [],
+      "layer": 3
+    },
+    "fractional_excretion_direct": {
+      "domain": "renal",
+      "module": "scripts.renal.tubular",
+      "object": "fractional_excretion_direct",
+      "depends_on": [
+        "gfr_from_nfp"
+      ],
+      "used_by": [],
+      "layer": 3
+    },
+    "fractional_water_reabsorption": {
+      "domain": "renal",
+      "module": "scripts.renal.tubular",
+      "object": "fractional_water_reabsorption",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "frank_starling": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.cardiac",
+      "object": "frank_starling_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "free_water_clearance": {
+      "domain": "renal",
+      "module": "scripts.renal.concentration",
+      "object": "free_water_clearance",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "functional_residual_capacity": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.volumes",
+      "object": "functional_residual_capacity",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "funny_current": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.ecg",
+      "object": "funny_current",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "fusion_frequency": {
+      "domain": "nervous",
+      "module": "scripts.nervous.motor",
+      "object": "fusion_frequency",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "gastric_acid_output": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.secretion",
+      "object": "gastric_acid_output",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "gastric_emptying_liquid": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.motility",
+      "object": "gastric_emptying_liquid",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "gastric_emptying_solid": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.motility",
+      "object": "gastric_emptying_solid",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "gastrin_acid_response": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.hormones",
+      "object": "gastrin_acid_response",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "gfr_from_glomerular_nfp": {
+      "domain": "renal",
+      "module": "scripts.renal.clearance",
+      "object": "gfr_from_glomerular_nfp",
+      "depends_on": [
+        "glomerular_nfp"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "gfr_from_nfp": {
+      "domain": "renal",
+      "module": "scripts.renal.glomerular",
+      "object": "gfr_from_nfp",
+      "depends_on": [
+        "net_filtration_pressure"
+      ],
+      "used_by": [
+        "excretion_mass_balance",
+        "filtered_load",
+        "filtration_fraction",
+        "fractional_excretion",
+        "fractional_excretion_direct",
+        "gfr_normalized"
+      ],
+      "layer": 2
+    },
+    "gfr_normalized": {
+      "domain": "renal",
+      "module": "scripts.renal.glomerular",
+      "object": "gfr_normalized",
+      "depends_on": [
+        "body_surface_area_dubois",
+        "gfr_from_nfp"
+      ],
+      "used_by": [],
+      "layer": 3
+    },
+    "ghk_potential": {
+      "domain": "excitable",
+      "module": "scripts.excitable.membrane_potential",
+      "object": "ghk_potential_eq",
+      "depends_on": [
+        "nernst_equation"
+      ],
+      "used_by": [],
+      "layer": 3
+    },
+    "gi_enzyme_kinetics": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.digestion",
+      "object": "enzyme_kinetics",
+      "depends_on": [],
+      "used_by": [
+        "amylase_kinetics",
+        "lipase_kinetics"
+      ],
+      "layer": 0
+    },
+    "gi_slow_wave": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.motility",
+      "object": "slow_wave",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "gi_transit_time": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.motility",
+      "object": "transit_time",
+      "depends_on": [
+        "peristalsis_velocity"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "gibbs_free_energy": {
+      "domain": "foundations",
+      "module": "scripts.foundations.thermodynamics",
+      "object": "gibbs_free_energy",
+      "depends_on": [],
+      "used_by": [
+        "electrochemical_potential",
+        "standard_free_energy"
+      ],
+      "layer": 0
+    },
+    "glomerular_nfp": {
+      "domain": "renal",
+      "module": "scripts.renal.glomerular",
+      "object": "net_filtration_pressure",
+      "depends_on": [],
+      "used_by": [
+        "gfr_from_glomerular_nfp"
+      ],
+      "layer": 0
+    },
+    "glp1_insulin_response": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.hormones",
+      "object": "glp1_insulin_response",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "glucose_excretion": {
+      "domain": "renal",
+      "module": "scripts.renal.tubular",
+      "object": "glucose_excretion",
+      "depends_on": [
+        "filtered_load"
+      ],
+      "used_by": [],
+      "layer": 4
+    },
+    "glut5_fructose": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.absorption",
+      "object": "glut5_fructose",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "goldman_flux": {
+      "domain": "membrane",
+      "module": "scripts.membrane.transport",
+      "object": "goldman_flux",
+      "depends_on": [
+        "permeability_coefficient"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "gto_response": {
+      "domain": "nervous",
+      "module": "scripts.nervous.motor",
+      "object": "gto_response",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "harris_benedict_bmr": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.energy_balance",
+      "object": "harris_benedict_bmr",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "heart_rate_autonomic": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.ecg",
+      "object": "heart_rate",
+      "depends_on": [],
+      "used_by": [
+        "cardiac_output",
+        "rate_pressure_product"
+      ],
+      "layer": 0
+    },
+    "hematocrit": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.blood",
+      "object": "hematocrit",
+      "depends_on": [],
+      "used_by": [
+        "blood_viscosity",
+        "mean_cell_volume",
+        "mean_corpuscular_hemoglobin_concentration"
+      ],
+      "layer": 0
+    },
+    "henderson_hasselbalch": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "henderson_hasselbalch",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "hepatic_blood_flow": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.liver",
+      "object": "hepatic_blood_flow",
+      "depends_on": [],
+      "used_by": [
+        "hepatic_clearance"
+      ],
+      "layer": 0
+    },
+    "hepatic_clearance": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.liver",
+      "object": "hepatic_clearance",
+      "depends_on": [
+        "extraction_ratio",
+        "hepatic_blood_flow"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "hh_gating_h": {
+      "domain": "excitable",
+      "module": "scripts.excitable.action_potential",
+      "object": "hh_gating_h_eq",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "hh_gating_m": {
+      "domain": "excitable",
+      "module": "scripts.excitable.action_potential",
+      "object": "hh_gating_m_eq",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "hh_gating_n": {
+      "domain": "excitable",
+      "module": "scripts.excitable.action_potential",
+      "object": "hh_gating_n_eq",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "hh_leak_current": {
+      "domain": "excitable",
+      "module": "scripts.excitable.action_potential",
+      "object": "hh_leak_current_eq",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "hh_membrane_current": {
+      "domain": "excitable",
+      "module": "scripts.excitable.action_potential",
+      "object": "hh_membrane_current_eq",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "hh_potassium_current": {
+      "domain": "excitable",
+      "module": "scripts.excitable.action_potential",
+      "object": "hh_potassium_current_eq",
+      "depends_on": [
+        "k_nernst_potential",
+        "nernst_equation"
+      ],
+      "used_by": [],
+      "layer": 3
+    },
+    "hh_sodium_current": {
+      "domain": "excitable",
+      "module": "scripts.excitable.action_potential",
+      "object": "hh_sodium_current_eq",
+      "depends_on": [
+        "nernst_equation"
+      ],
+      "used_by": [],
+      "layer": 3
+    },
+    "hill_equation": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.oxygen_transport",
+      "object": "hill_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "hill_force_velocity": {
+      "domain": "excitable",
+      "module": "scripts.excitable.muscle",
+      "object": "hill_force_velocity_eq",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "hill_saturation": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.blood",
+      "object": "hill_saturation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "hormone_fraction_free": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.kinetics",
+      "object": "fraction_free_equation",
+      "depends_on": [
+        "hormone_kd"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "hormone_half_life": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.kinetics",
+      "object": "half_life_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "hormone_half_life_from_mcr": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.kinetics",
+      "object": "hormone_half_life_from_mcr",
+      "depends_on": [
+        "clearance_from_metabolic_rate"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "hormone_kd": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.kinetics",
+      "object": "kd_equation",
+      "depends_on": [],
+      "used_by": [
+        "cheng_prusoff_ki",
+        "competitive_inhibition_binding",
+        "hormone_fraction_free",
+        "receptor_fractional_occupancy",
+        "receptor_saturation_binding"
+      ],
+      "layer": 0
+    },
+    "hpa_acth_dynamics": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.adrenal",
+      "object": "acth_dynamics_equation",
+      "depends_on": [
+        "hpa_crh_dynamics"
+      ],
+      "used_by": [
+        "hpa_cortisol_dynamics"
+      ],
+      "layer": 1
+    },
+    "hpa_cortisol_dynamics": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.adrenal",
+      "object": "cortisol_dynamics_equation",
+      "depends_on": [
+        "hpa_acth_dynamics"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "hpa_crh_dynamics": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.adrenal",
+      "object": "crh_dynamics_equation",
+      "depends_on": [],
+      "used_by": [
+        "hpa_acth_dynamics"
+      ],
+      "layer": 0
+    },
+    "hursh_conduction_velocity": {
+      "domain": "excitable",
+      "module": "scripts.excitable.action_potential",
+      "object": "hursh_conduction_velocity_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "huxley_attached_fraction": {
+      "domain": "excitable",
+      "module": "scripts.excitable.muscle",
+      "object": "huxley_attached_fraction_eq",
+      "depends_on": [
+        "huxley_attachment_rate",
+        "huxley_detachment_rate"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "huxley_attachment_rate": {
+      "domain": "excitable",
+      "module": "scripts.excitable.muscle",
+      "object": "huxley_attachment_rate_eq",
+      "depends_on": [],
+      "used_by": [
+        "huxley_attached_fraction"
+      ],
+      "layer": 0
+    },
+    "huxley_detachment_rate": {
+      "domain": "excitable",
+      "module": "scripts.excitable.muscle",
+      "object": "huxley_detachment_rate_eq",
+      "depends_on": [],
+      "used_by": [
+        "huxley_attached_fraction"
+      ],
+      "layer": 0
+    },
+    "hydraulic_resistance": {
+      "domain": "foundations",
+      "module": "scripts.foundations.transport",
+      "object": "hydraulic_resistance",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "hydrostatic_pressure": {
+      "domain": "foundations",
+      "module": "scripts.foundations.transport",
+      "object": "hydrostatic_pressure",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "hypoxic_response": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.ventilatory_control",
+      "object": "hypoxic_response",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "ideal_gas_law": {
+      "domain": "foundations",
+      "module": "scripts.foundations.thermodynamics",
+      "object": "ideal_gas_law",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "incretin_effect": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.hormones",
+      "object": "incretin_effect",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "indicator_dilution_cardiac_output": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.cardiac",
+      "object": "indicator_dilution_cardiac_output",
+      "depends_on": [],
+      "used_by": [
+        "cardiac_index",
+        "map_from_flow",
+        "pvr_dyn",
+        "svr_dyn",
+        "systemic_oxygen_delivery",
+        "total_peripheral_resistance"
+      ],
+      "layer": 0
+    },
+    "inspiratory_capacity": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.volumes",
+      "object": "inspiratory_capacity",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "inspired_po2": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.gas_exchange",
+      "object": "inspired_po2",
+      "depends_on": [
+        "partial_pressure"
+      ],
+      "used_by": [
+        "alveolar_gas_equation"
+      ],
+      "layer": 1
+    },
+    "ionic_current": {
+      "domain": "excitable",
+      "module": "scripts.excitable.membrane_potential",
+      "object": "ionic_current",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "iron_absorption_gi": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.absorption",
+      "object": "iron_absorption",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "k_nernst_potential": {
+      "domain": "renal",
+      "module": "scripts.renal.potassium",
+      "object": "k_nernst_potential",
+      "depends_on": [],
+      "used_by": [
+        "chord_conductance",
+        "hh_potassium_current",
+        "k_secretion_driving_force",
+        "k_secretion_flux"
+      ],
+      "layer": 0
+    },
+    "k_secretion_driving_force": {
+      "domain": "renal",
+      "module": "scripts.renal.potassium",
+      "object": "k_secretion_driving_force",
+      "depends_on": [
+        "k_nernst_potential"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "k_secretion_flux": {
+      "domain": "renal",
+      "module": "scripts.renal.potassium",
+      "object": "k_secretion_flux",
+      "depends_on": [
+        "k_nernst_potential"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "kassirer_bleich_hydrogen_ion": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "kassirer_bleich_hydrogen_ion_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "kelvin_voigt_model": {
+      "domain": "membrane",
+      "module": "scripts.membrane.mechanics",
+      "object": "kelvin_voigt_model",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "laplace_cylinder": {
+      "domain": "foundations",
+      "module": "scripts.foundations.transport",
+      "object": "laplace_cylinder",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "laplace_pressure": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "laplace_pressure",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "laplace_sphere": {
+      "domain": "foundations",
+      "module": "scripts.foundations.transport",
+      "object": "laplace_sphere",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "lean_body_mass": {
+      "domain": "renal",
+      "module": "scripts.renal.compartments",
+      "object": "lean_body_mass",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "lennard_jones_potential": {
+      "domain": "foundations",
+      "module": "scripts.foundations.electrical",
+      "object": "lennard_jones_potential",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "lipase_activity_bile": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.digestion",
+      "object": "lipase_activity_bile",
+      "depends_on": [
+        "critical_micellar_concentration"
+      ],
+      "used_by": [
+        "fat_absorption_efficiency"
+      ],
+      "layer": 1
+    },
+    "lipase_kinetics": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.digestion",
+      "object": "lipase_kinetics",
+      "depends_on": [
+        "gi_enzyme_kinetics"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "lithogenic_index": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.liver",
+      "object": "lithogenic_index",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "loading_dose": {
+      "domain": "foundations",
+      "module": "scripts.foundations.kinetics",
+      "object": "loading_dose",
+      "depends_on": [
+        "first_order_elimination"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "maintenance_infusion_rate": {
+      "domain": "foundations",
+      "module": "scripts.foundations.kinetics",
+      "object": "maintenance_infusion_rate",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "map_from_flow": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "map_from_flow",
+      "depends_on": [
+        "cardiac_output",
+        "cardiac_output_fick",
+        "indicator_dilution_cardiac_output"
+      ],
+      "used_by": [
+        "svr_dyn",
+        "total_peripheral_resistance"
+      ],
+      "layer": 2
+    },
+    "maxwell_model": {
+      "domain": "membrane",
+      "module": "scripts.membrane.mechanics",
+      "object": "maxwell_model",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "mdrd_gfr": {
+      "domain": "renal",
+      "module": "scripts.renal.clearance",
+      "object": "mdrd_gfr",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "mean_arterial_pressure": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "mean_arterial_pressure",
+      "depends_on": [],
+      "used_by": [
+        "stroke_work",
+        "svr_dyn",
+        "total_peripheral_resistance"
+      ],
+      "layer": 0
+    },
+    "mean_cell_volume": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.blood",
+      "object": "mean_cell_volume",
+      "depends_on": [
+        "hematocrit"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "mean_corpuscular_hemoglobin": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.blood",
+      "object": "mean_corpuscular_hemoglobin",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "mean_corpuscular_hemoglobin_concentration": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.blood",
+      "object": "mean_corpuscular_hemoglobin_concentration",
+      "depends_on": [
+        "hematocrit"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "mean_flow_velocity": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "mean_flow_velocity",
+      "depends_on": [],
+      "used_by": [
+        "bernoulli_equivalent_pressure",
+        "reynolds_number_blood"
+      ],
+      "layer": 0
+    },
+    "medullary_gradient": {
+      "domain": "renal",
+      "module": "scripts.renal.concentration",
+      "object": "medullary_gradient",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "membrane_capacitance": {
+      "domain": "membrane",
+      "module": "scripts.membrane.structure",
+      "object": "membrane_capacitance",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "membrane_time_constant": {
+      "domain": "excitable",
+      "module": "scripts.excitable.action_potential",
+      "object": "time_constant_eq",
+      "depends_on": [],
+      "used_by": [
+        "cable_equation"
+      ],
+      "layer": 0
+    },
+    "metabolic_alkalosis_compensation": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "metabolic_alkalosis_compensation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "metabolic_clearance_rate": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.kinetics",
+      "object": "mcr_equation",
+      "depends_on": [],
+      "used_by": [
+        "clearance_from_metabolic_rate"
+      ],
+      "layer": 0
+    },
+    "michaelis_menten": {
+      "domain": "foundations",
+      "module": "scripts.foundations.kinetics",
+      "object": "michaelis_menten",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "mifflin_st_jeor_ree": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.energy_balance",
+      "object": "mifflin_st_jeor_ree",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "minute_ventilation": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.volumes",
+      "object": "minute_ventilation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "mixed_venous_oxygen_content": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.blood",
+      "object": "mixed_venous_oxygen_content_equation",
+      "depends_on": [],
+      "used_by": [
+        "cardiac_output_fick",
+        "oxygen_consumption_fick",
+        "oxygen_extraction_ratio",
+        "shunt_equation"
+      ],
+      "layer": 0
+    },
+    "moens_korteweg_pwv": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "moens_korteweg",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "motor_unit_force": {
+      "domain": "excitable",
+      "module": "scripts.excitable.muscle",
+      "object": "motor_unit_force",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "muscle_efficiency": {
+      "domain": "excitable",
+      "module": "scripts.excitable.energetics",
+      "object": "muscle_efficiency_eq",
+      "depends_on": [
+        "muscle_power"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "muscle_power": {
+      "domain": "excitable",
+      "module": "scripts.excitable.muscle",
+      "object": "muscle_power_eq",
+      "depends_on": [],
+      "used_by": [
+        "muscle_efficiency"
+      ],
+      "layer": 0
+    },
+    "nak_pump_rate": {
+      "domain": "membrane",
+      "module": "scripts.membrane.transport",
+      "object": "nak_pump_rate",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "ncx_reversal": {
+      "domain": "membrane",
+      "module": "scripts.membrane.transport",
+      "object": "ncx_reversal",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "nernst_equation": {
+      "domain": "foundations",
+      "module": "scripts.foundations.thermodynamics",
+      "object": "nernst_equation",
+      "depends_on": [
+        "electrochemical_potential"
+      ],
+      "used_by": [
+        "chord_conductance",
+        "ghk_potential",
+        "hh_potassium_current",
+        "hh_sodium_current"
+      ],
+      "layer": 2
+    },
+    "net_acid_excretion": {
+      "domain": "renal",
+      "module": "scripts.renal.acid_base",
+      "object": "net_acid_excretion",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "net_filtration_pressure": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.microcirculation",
+      "object": "net_filtration_pressure",
+      "depends_on": [
+        "capillary_pressure"
+      ],
+      "used_by": [
+        "gfr_from_nfp"
+      ],
+      "layer": 1
+    },
+    "new_bicarbonate_generation": {
+      "domain": "renal",
+      "module": "scripts.renal.acid_base",
+      "object": "new_bicarbonate_generation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "newtonian_viscosity": {
+      "domain": "membrane",
+      "module": "scripts.membrane.mechanics",
+      "object": "newtonian_viscosity",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "nmda_mg_block": {
+      "domain": "nervous",
+      "module": "scripts.nervous.synaptic",
+      "object": "nmda_mg_block",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "norwich_sensation_magnitude": {
+      "domain": "nervous",
+      "module": "scripts.nervous.sensory",
+      "object": "norwich_sensation_magnitude",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "orientation_selectivity_index": {
+      "domain": "nervous",
+      "module": "scripts.nervous.sensory",
+      "object": "orientation_selectivity_index",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "osmotic_pressure": {
+      "domain": "membrane",
+      "module": "scripts.membrane.osmosis",
+      "object": "osmotic_pressure",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "oxygen_consumption_fick": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.oxygen_transport",
+      "object": "oxygen_consumption_fick",
+      "depends_on": [
+        "mixed_venous_oxygen_content",
+        "respiratory_oxygen_content"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "oxygen_consumption_gas_exchange": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.oxygen_transport",
+      "object": "oxygen_consumption_gas_exchange",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "oxygen_extraction_ratio": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.oxygen_transport",
+      "object": "oxygen_extraction_ratio",
+      "depends_on": [
+        "mixed_venous_oxygen_content",
+        "respiratory_oxygen_content"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "oxygenation_index": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.gas_exchange",
+      "object": "oxygenation_index_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "p50_bohr_ph": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.gas_exchange",
+      "object": "p50_bohr_ph_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "pah_extraction_ratio": {
+      "domain": "renal",
+      "module": "scripts.renal.clearance",
+      "object": "pah_extraction_ratio",
+      "depends_on": [],
+      "used_by": [
+        "true_rpf_from_pah"
+      ],
+      "layer": 0
+    },
+    "pancreatic_bicarbonate": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.secretion",
+      "object": "pancreatic_bicarbonate",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "pancreatic_gsis": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.pancreatic",
+      "object": "gsis_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "pancreatic_homa_b": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.pancreatic",
+      "object": "homa_b_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "pancreatic_homa_ir": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.pancreatic",
+      "object": "homa_ir_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "parallel_plate_capacitor": {
+      "domain": "foundations",
+      "module": "scripts.foundations.electrical",
+      "object": "parallel_plate_capacitor",
+      "depends_on": [
+        "capacitance"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "partial_pressure": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.gas_exchange",
+      "object": "partial_pressure",
+      "depends_on": [],
+      "used_by": [
+        "inspired_po2"
+      ],
+      "layer": 0
+    },
+    "partition_coefficient": {
+      "domain": "membrane",
+      "module": "scripts.membrane.structure",
+      "object": "partition_coefficient",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "passive_membrane_charging": {
+      "domain": "excitable",
+      "module": "scripts.excitable.action_potential",
+      "object": "passive_membrane_charging_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "pepsin_activity": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.digestion",
+      "object": "pepsin_activity",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "peristalsis_velocity": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.motility",
+      "object": "peristalsis_velocity",
+      "depends_on": [],
+      "used_by": [
+        "gi_transit_time"
+      ],
+      "layer": 0
+    },
+    "permeability_coefficient": {
+      "domain": "membrane",
+      "module": "scripts.membrane.structure",
+      "object": "permeability_coefficient",
+      "depends_on": [],
+      "used_by": [
+        "ficks_membrane_flux",
+        "goldman_flux"
+      ],
+      "layer": 0
+    },
+    "persistence_length": {
+      "domain": "membrane",
+      "module": "scripts.membrane.mechanics",
+      "object": "persistence_length",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "pf_ratio": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.gas_exchange",
+      "object": "pf_ratio",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "photoreceptor_response": {
+      "domain": "nervous",
+      "module": "scripts.nervous.sensory",
+      "object": "photoreceptor_response",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "plasma_buffer_capacity": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.blood",
+      "object": "plasma_buffer_capacity",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "poiseuille_flow": {
+      "domain": "foundations",
+      "module": "scripts.foundations.transport",
+      "object": "poiseuille_flow",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "poiseuille_resistance": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "poiseuille_resistance",
+      "depends_on": [
+        "blood_viscosity"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "poisson_ratio": {
+      "domain": "membrane",
+      "module": "scripts.membrane.mechanics",
+      "object": "poisson_ratio",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "pressure_flow": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "pressure_flow",
+      "depends_on": [
+        "airway_resistance"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "protein_oxidation_urinary_nitrogen": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.energy_balance",
+      "object": "protein_oxidation_urinary_nitrogen",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "ps_product": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.microcirculation",
+      "object": "ps_product",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "pulse_pressure": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "pulse_pressure",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "pulse_pressure_from_compliance": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "pulse_pressure_from_compliance",
+      "depends_on": [
+        "stroke_volume"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "pvr_dyn": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "pvr_dyn",
+      "depends_on": [
+        "cardiac_output",
+        "cardiac_output_fick",
+        "indicator_dilution_cardiac_output"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "qtc_bazett": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.ecg",
+      "object": "qtc_bazett",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "qtc_fridericia": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.ecg",
+      "object": "qtc_fridericia",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "quantal_content": {
+      "domain": "nervous",
+      "module": "scripts.nervous.synaptic",
+      "object": "quantal_content",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "quantal_content_epp_mepp": {
+      "domain": "excitable",
+      "module": "scripts.excitable.synapse",
+      "object": "quantal_content_eq",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "quantal_variance": {
+      "domain": "nervous",
+      "module": "scripts.nervous.synaptic",
+      "object": "quantal_variance",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "rate_force_relation": {
+      "domain": "nervous",
+      "module": "scripts.nervous.motor",
+      "object": "rate_force_relation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "rate_pressure_product": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.ecg",
+      "object": "rate_pressure_product",
+      "depends_on": [
+        "heart_rate_autonomic"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "receptive_field_dog": {
+      "domain": "nervous",
+      "module": "scripts.nervous.sensory",
+      "object": "receptive_field_dog",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "receptor_adaptation": {
+      "domain": "nervous",
+      "module": "scripts.nervous.sensory",
+      "object": "receptor_adaptation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "receptor_fractional_occupancy": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.receptor",
+      "object": "fractional_occupancy_equation",
+      "depends_on": [
+        "hormone_kd"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "receptor_occupancy": {
+      "domain": "membrane",
+      "module": "scripts.membrane.signaling",
+      "object": "receptor_occupancy",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "receptor_saturation_binding": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.receptor",
+      "object": "saturation_binding_equation",
+      "depends_on": [
+        "hormone_kd"
+      ],
+      "used_by": [
+        "scatchard_analysis",
+        "scatchard_transform"
+      ],
+      "layer": 1
+    },
+    "redox_free_energy": {
+      "domain": "foundations",
+      "module": "scripts.foundations.thermodynamics",
+      "object": "redox_free_energy",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "reflex_gain": {
+      "domain": "nervous",
+      "module": "scripts.nervous.motor",
+      "object": "reflex_gain",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "refractive_index": {
+      "domain": "nervous",
+      "module": "scripts.nervous.vision",
+      "object": "refractive_index",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "refractive_power_diopters": {
+      "domain": "nervous",
+      "module": "scripts.nervous.vision",
+      "object": "refractive_power_diopters",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "renal_autoregulation_index": {
+      "domain": "renal",
+      "module": "scripts.renal.regulation",
+      "object": "renal_autoregulation_index",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "renal_plasma_flow": {
+      "domain": "renal",
+      "module": "scripts.renal.blood_flow",
+      "object": "renal_plasma_flow",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "renal_vascular_resistance": {
+      "domain": "renal",
+      "module": "scripts.renal.blood_flow",
+      "object": "renal_vascular_resistance",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "reproductive_lh_surge": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.reproductive",
+      "object": "lh_surge_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "reproductive_progesterone_temperature": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.reproductive",
+      "object": "progesterone_temp_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "respiratory_oxygen_content": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.oxygen_transport",
+      "object": "oxygen_content",
+      "depends_on": [],
+      "used_by": [
+        "oxygen_consumption_fick",
+        "oxygen_extraction_ratio",
+        "shunt_equation",
+        "tissue_oxygen_delivery"
+      ],
+      "layer": 0
+    },
+    "respiratory_quotient": {
+      "domain": "membrane",
+      "module": "scripts.membrane.metabolism",
+      "object": "respiratory_quotient",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "respiratory_time_constant": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "time_constant",
+      "depends_on": [
+        "airway_resistance",
+        "compliance"
+      ],
+      "used_by": [
+        "exponential_emptying"
+      ],
+      "layer": 1
+    },
+    "reynolds_number_airway": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "reynolds_number",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "reynolds_number_blood": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "reynolds_number",
+      "depends_on": [
+        "blood_viscosity",
+        "mean_flow_velocity"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "rohrer_equation": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "rohrer_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "safety_factor": {
+      "domain": "excitable",
+      "module": "scripts.excitable.synapse",
+      "object": "safety_factor_eq",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "salivary_flow": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.secretion",
+      "object": "salivary_flow",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "scatchard_analysis": {
+      "domain": "membrane",
+      "module": "scripts.membrane.signaling",
+      "object": "scatchard_analysis",
+      "depends_on": [
+        "receptor_saturation_binding"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "scatchard_transform": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.receptor",
+      "object": "scatchard_equation",
+      "depends_on": [
+        "receptor_saturation_binding"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "secretin_bicarbonate": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.hormones",
+      "object": "secretin_bicarbonate",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "sglt1_glucose": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.absorption",
+      "object": "sglt1_glucose",
+      "depends_on": [],
+      "used_by": [
+        "water_absorption_gi"
+      ],
+      "layer": 0
+    },
+    "shunt_equation": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.vq_matching",
+      "object": "shunt_equation",
+      "depends_on": [
+        "mixed_venous_oxygen_content",
+        "respiratory_oxygen_content"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "shunting_inhibition": {
+      "domain": "nervous",
+      "module": "scripts.nervous.synaptic",
+      "object": "shunting_inhibition",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "sieving_coefficient": {
+      "domain": "renal",
+      "module": "scripts.renal.glomerular",
+      "object": "sieving_coefficient",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "single_channel_conductance": {
+      "domain": "membrane",
+      "module": "scripts.membrane.transport",
+      "object": "single_channel_conductance",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "snells_law": {
+      "domain": "nervous",
+      "module": "scripts.nervous.vision",
+      "object": "snells_law",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "sodium_clearance": {
+      "domain": "renal",
+      "module": "scripts.renal.clearance",
+      "object": "sodium_clearance",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "solute_flux": {
+      "domain": "foundations",
+      "module": "scripts.foundations.transport",
+      "object": "solute_flux",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "sound_intensity_level_db": {
+      "domain": "nervous",
+      "module": "scripts.nervous.hearing",
+      "object": "sound_intensity_level_db",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "space_constant": {
+      "domain": "excitable",
+      "module": "scripts.excitable.action_potential",
+      "object": "space_constant_eq",
+      "depends_on": [],
+      "used_by": [
+        "cable_equation"
+      ],
+      "layer": 0
+    },
+    "spindle_response": {
+      "domain": "nervous",
+      "module": "scripts.nervous.motor",
+      "object": "spindle_response",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "standard_base_excess": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "standard_base_excess",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "standard_free_energy": {
+      "domain": "foundations",
+      "module": "scripts.foundations.thermodynamics",
+      "object": "standard_free_energy",
+      "depends_on": [
+        "gibbs_free_energy"
+      ],
+      "used_by": [
+        "actual_free_energy"
+      ],
+      "layer": 1
+    },
+    "standard_linear_solid": {
+      "domain": "membrane",
+      "module": "scripts.membrane.mechanics",
+      "object": "standard_linear_solid",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "starch_digestion_first_order": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.digestion",
+      "object": "starch_digestion_first_order",
+      "depends_on": [
+        "amylase_kinetics"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "starling_filtration": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.microcirculation",
+      "object": "starling_filtration",
+      "depends_on": [
+        "capillary_pressure"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "static_compliance": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "static_compliance",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "stdp": {
+      "domain": "nervous",
+      "module": "scripts.nervous.plasticity",
+      "object": "stdp",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "stevens_power_law": {
+      "domain": "nervous",
+      "module": "scripts.nervous.sensory",
+      "object": "stevens_power_law",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "stokes_einstein": {
+      "domain": "foundations",
+      "module": "scripts.foundations.diffusion",
+      "object": "stokes_einstein",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "stool_osmotic_gap": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.absorption",
+      "object": "stool_osmotic_gap_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "strength_duration_weiss": {
+      "domain": "excitable",
+      "module": "scripts.excitable.action_potential",
+      "object": "strength_duration_weiss",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "stroke_volume": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.cardiac",
+      "object": "stroke_volume",
+      "depends_on": [],
+      "used_by": [
+        "arterial_elastance",
+        "cardiac_output",
+        "pulse_pressure_from_compliance",
+        "stroke_work"
+      ],
+      "layer": 0
+    },
+    "stroke_work": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "stroke_work_equation",
+      "depends_on": [
+        "mean_arterial_pressure",
+        "stroke_volume"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "strong_ion_difference_apparent": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "strong_ion_difference_apparent",
+      "depends_on": [],
+      "used_by": [
+        "strong_ion_gap"
+      ],
+      "layer": 0
+    },
+    "strong_ion_difference_effective": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "strong_ion_difference_effective",
+      "depends_on": [
+        "weak_acid_anion_charge"
+      ],
+      "used_by": [
+        "strong_ion_gap"
+      ],
+      "layer": 1
+    },
+    "strong_ion_gap": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "strong_ion_gap",
+      "depends_on": [
+        "strong_ion_difference_apparent",
+        "strong_ion_difference_effective"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "surface_free_energy": {
+      "domain": "membrane",
+      "module": "scripts.membrane.structure",
+      "object": "surface_free_energy",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "surface_pressure": {
+      "domain": "membrane",
+      "module": "scripts.membrane.structure",
+      "object": "surface_pressure",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "svr_dyn": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "svr_dyn",
+      "depends_on": [
+        "cardiac_output",
+        "cardiac_output_fick",
+        "indicator_dilution_cardiac_output",
+        "map_from_flow",
+        "mean_arterial_pressure"
+      ],
+      "used_by": [],
+      "layer": 3
+    },
+    "synaptic_current": {
+      "domain": "nervous",
+      "module": "scripts.nervous.synaptic",
+      "object": "synaptic_current",
+      "depends_on": [
+        "alpha_function",
+        "double_exponential_synapse"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "systemic_oxygen_delivery": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.blood",
+      "object": "oxygen_delivery",
+      "depends_on": [
+        "blood_oxygen_content",
+        "cardiac_output",
+        "cardiac_output_fick",
+        "indicator_dilution_cardiac_output"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "systemic_vascular_compliance": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "systemic_vascular_compliance",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "thin_lens_formula": {
+      "domain": "nervous",
+      "module": "scripts.nervous.vision",
+      "object": "thin_lens_formula",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "thyroid_t4_dynamics": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.thyroid",
+      "object": "t4_dynamics_equation",
+      "depends_on": [
+        "thyroid_t4_production",
+        "thyroid_tsh_dynamics"
+      ],
+      "used_by": [],
+      "layer": 3
+    },
+    "thyroid_t4_production": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.thyroid",
+      "object": "t4_production_equation",
+      "depends_on": [
+        "thyroid_tsh_response"
+      ],
+      "used_by": [
+        "thyroid_t4_dynamics"
+      ],
+      "layer": 2
+    },
+    "thyroid_tsh_dynamics": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.thyroid",
+      "object": "tsh_dynamics_equation",
+      "depends_on": [
+        "thyroid_tsh_response"
+      ],
+      "used_by": [
+        "thyroid_t4_dynamics"
+      ],
+      "layer": 2
+    },
+    "thyroid_tsh_response": {
+      "domain": "endocrine",
+      "module": "scripts.endocrine.thyroid",
+      "object": "tsh_response_equation",
+      "depends_on": [
+        "feedback_tropic_dynamics"
+      ],
+      "used_by": [
+        "thyroid_t4_production",
+        "thyroid_tsh_dynamics"
+      ],
+      "layer": 1
+    },
+    "tissue_oxygen_delivery": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.oxygen_transport",
+      "object": "oxygen_delivery",
+      "depends_on": [
+        "respiratory_oxygen_content"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "total_compliance": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "total_compliance",
+      "depends_on": [
+        "compliance"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "total_elastance": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "total_elastance",
+      "depends_on": [
+        "elastance"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "total_lung_capacity": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.volumes",
+      "object": "total_lung_capacity",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "total_peripheral_resistance": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "tpr",
+      "depends_on": [
+        "cardiac_output",
+        "cardiac_output_fick",
+        "indicator_dilution_cardiac_output",
+        "map_from_flow",
+        "mean_arterial_pressure"
+      ],
+      "used_by": [
+        "vascular_function_curve",
+        "windkessel_time_constant"
+      ],
+      "layer": 3
+    },
+    "transferrin_saturation": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.blood",
+      "object": "transferrin_saturation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "transmural_pressure": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "transmural_pressure",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "transport_tm": {
+      "domain": "renal",
+      "module": "scripts.renal.tubular",
+      "object": "transport_tm",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "true_rpf_from_pah": {
+      "domain": "renal",
+      "module": "scripts.renal.clearance",
+      "object": "true_rpf_from_pah",
+      "depends_on": [
+        "clearance",
+        "pah_extraction_ratio"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "ttkg": {
+      "domain": "renal",
+      "module": "scripts.renal.clearance",
+      "object": "ttkg_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "tubuloglomerular_feedback": {
+      "domain": "renal",
+      "module": "scripts.renal.regulation",
+      "object": "tubuloglomerular_feedback",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "urine_osmolality_ratio": {
+      "domain": "renal",
+      "module": "scripts.renal.concentration",
+      "object": "urine_osmolality_ratio",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "ussing_flux_ratio": {
+      "domain": "membrane",
+      "module": "scripts.membrane.transport",
+      "object": "ussing_flux_ratio",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "va_coupling_esv": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.cardiac",
+      "object": "va_coupling_esv_equation",
+      "depends_on": [
+        "arterial_elastance"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "vascular_compliance": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "compliance",
+      "depends_on": [],
+      "used_by": [
+        "vascular_function_curve",
+        "windkessel_time_constant"
+      ],
+      "layer": 0
+    },
+    "vascular_function_curve": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "vascular_function_curve",
+      "depends_on": [
+        "total_peripheral_resistance",
+        "vascular_compliance"
+      ],
+      "used_by": [],
+      "layer": 4
+    },
+    "ventricular_wall_stress": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "ventricular_wall_stress",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "vital_capacity": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.volumes",
+      "object": "vital_capacity",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "volume_flux": {
+      "domain": "foundations",
+      "module": "scripts.foundations.transport",
+      "object": "volume_flux",
+      "depends_on": [],
+      "used_by": [
+        "convection_diffusion_flux"
+      ],
+      "layer": 0
+    },
+    "volume_of_distribution": {
+      "domain": "foundations",
+      "module": "scripts.foundations.transport",
+      "object": "volume_of_distribution",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "wall_shear_stress": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.microcirculation",
+      "object": "shear_stress",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "water_absorption_gi": {
+      "domain": "gastrointestinal",
+      "module": "scripts.gastrointestinal.absorption",
+      "object": "water_absorption",
+      "depends_on": [
+        "sglt1_glucose"
+      ],
+      "used_by": [],
+      "layer": 1
+    },
+    "water_flux": {
+      "domain": "membrane",
+      "module": "scripts.membrane.osmosis",
+      "object": "water_flux",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "water_reabsorption_flux": {
+      "domain": "renal",
+      "module": "scripts.renal.concentration",
+      "object": "water_reabsorption_flux",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "weak_acid_anion_charge": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "weak_acid_anion_charge",
+      "depends_on": [],
+      "used_by": [
+        "strong_ion_difference_effective"
+      ],
+      "layer": 0
+    },
+    "weber_fraction": {
+      "domain": "nervous",
+      "module": "scripts.nervous.sensory",
+      "object": "weber_fraction",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "whole_cell_conductance": {
+      "domain": "membrane",
+      "module": "scripts.membrane.transport",
+      "object": "whole_cell_conductance",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "windkessel_time_constant": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "windkessel_tau",
+      "depends_on": [
+        "total_peripheral_resistance",
+        "vascular_compliance"
+      ],
+      "used_by": [],
+      "layer": 4
+    },
+    "winters_formula": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.acid_base",
+      "object": "winters_formula",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "womersley_number": {
+      "domain": "cardiovascular",
+      "module": "scripts.cardiovascular.hemodynamics",
+      "object": "womersley_number",
+      "depends_on": [
+        "blood_viscosity"
+      ],
+      "used_by": [],
+      "layer": 2
+    },
+    "work_of_breathing_elastic": {
+      "domain": "respiratory",
+      "module": "scripts.respiratory.mechanics",
+      "object": "work_of_breathing_elastic_equation",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    },
+    "youngs_modulus": {
+      "domain": "membrane",
+      "module": "scripts.membrane.mechanics",
+      "object": "youngs_modulus",
+      "depends_on": [],
+      "used_by": [],
+      "layer": 0
+    }
+  },
+  "cross_domain_equations": {
+    "nernst_equation": {
+      "name": "Nernst Equation",
+      "primary_domain": "foundations",
+      "used_in_domains": [
+        "membrane",
+        "excitable",
+        "nervous",
+        "cardiovascular",
+        "renal"
+      ],
+      "module": "scripts.foundations.thermodynamics",
+      "object": "nernst_equation"
+    },
+    "fick_first_law": {
+      "name": "Fick's First Law of Diffusion",
+      "primary_domain": "foundations",
+      "used_in_domains": [
+        "membrane",
+        "respiratory",
+        "renal",
+        "cardiovascular"
+      ],
+      "module": "scripts.foundations.diffusion",
+      "object": "fick_first_law"
+    },
+    "poiseuille_flow": {
+      "name": "Poiseuille's Law",
+      "primary_domain": "foundations",
+      "used_in_domains": [
+        "cardiovascular",
+        "respiratory",
+        "renal"
+      ],
+      "module": "scripts.foundations.transport",
+      "object": "poiseuille_flow"
+    },
+    "michaelis_menten": {
+      "name": "Michaelis-Menten Kinetics",
+      "primary_domain": "foundations",
+      "used_in_domains": [
+        "membrane",
+        "renal",
+        "gastrointestinal",
+        "endocrine"
+      ],
+      "module": "scripts.foundations.kinetics",
+      "object": "michaelis_menten"
+    },
+    "laplace_sphere": {
+      "name": "Law of Laplace (sphere)",
+      "primary_domain": "foundations",
+      "used_in_domains": [
+        "cardiovascular",
+        "respiratory",
+        "gastrointestinal"
+      ],
+      "module": "scripts.foundations.transport",
+      "object": "laplace_sphere"
+    },
+    "henderson_hasselbalch": {
+      "name": "Henderson-Hasselbalch Equation",
+      "primary_domain": "respiratory",
+      "used_in_domains": [
+        "renal",
+        "gastrointestinal"
+      ],
+      "module": "scripts.respiratory.acid_base",
+      "object": "henderson_hasselbalch"
+    },
+    "hill_equation": {
+      "name": "Hill Equation",
+      "primary_domain": "respiratory",
+      "used_in_domains": [
+        "excitable",
+        "cardiovascular",
+        "endocrine"
+      ],
+      "module": "scripts.respiratory.oxygen_transport",
+      "object": "hill_equation"
+    },
+    "starling_filtration": {
+      "name": "Starling Filtration",
+      "primary_domain": "cardiovascular",
+      "used_in_domains": [
+        "renal",
+        "gastrointestinal",
+        "respiratory"
+      ],
+      "module": "scripts.cardiovascular.microcirculation",
+      "object": "starling_filtration"
+    },
+    "ghk_potential": {
+      "name": "Goldman-Hodgkin-Katz Potential",
+      "primary_domain": "excitable",
+      "used_in_domains": [
+        "membrane",
+        "nervous",
+        "cardiovascular"
+      ],
+      "module": "scripts.excitable.membrane_potential",
+      "object": "ghk_potential_eq"
+    },
+    "goldman_flux": {
+      "name": "Goldman-Hodgkin-Katz Flux",
+      "primary_domain": "membrane",
+      "used_in_domains": [
+        "excitable"
+      ],
+      "module": "scripts.membrane.transport",
+      "object": "goldman_flux"
+    },
+    "alveolar_gas_equation": {
+      "name": "Alveolar Gas Equation",
+      "primary_domain": "respiratory",
+      "used_in_domains": [
+        "cardiovascular"
+      ],
+      "module": "scripts.respiratory.gas_exchange",
+      "object": "alveolar_gas_equation"
+    },
+    "respiratory_oxygen_content": {
+      "name": "Oxygen Content",
+      "primary_domain": "respiratory",
+      "used_in_domains": [
+        "cardiovascular"
+      ],
+      "module": "scripts.respiratory.oxygen_transport",
+      "object": "oxygen_content"
+    },
+    "cardiac_output_fick": {
+      "name": "Fick Principle (Cardiac Output)",
+      "primary_domain": "cardiovascular",
+      "used_in_domains": [
+        "respiratory"
+      ],
+      "module": "scripts.cardiovascular.cardiac",
+      "object": "cardiac_output_fick"
+    }
+  },
+  "topological_layers": {
+    "0": [
+      "aa_gradient_age_limit",
+      "acoustic_intensity",
+      "acute_respiratory_acidosis_hco3",
+      "acute_respiratory_alkalosis_hco3",
+      "acute_respiratory_ph_change",
+      "adaptation_index",
+      "adh_water_permeability",
+      "airway_resistance",
+      "aldosterone_regulation",
+      "alpha_function",
+      "alveolar_pco2_equation",
+      "alveolar_ventilation",
+      "anion_gap",
+      "apparent_volume_of_distribution",
+      "architectural_gear_ratio",
+      "arrhenius_equation",
+      "atp_consumption",
+      "average_steady_state_concentration",
+      "baroreceptor_sensitivity",
+      "basal_metabolic_rate",
+      "base_excess_van_slyke",
+      "bcm_theory",
+      "beer_lambert_attenuation",
+      "bile_acid_synthesis",
+      "bilirubin_production",
+      "bioavailability_auc",
+      "blood_oxygen_content",
+      "body_energy_balance",
+      "body_surface_area_dubois",
+      "boyle_vant_hoff_relation",
+      "bramwell_hill_pwv",
+      "ca_force_relationship",
+      "ca_release_cooperative",
+      "cable_equation_dendrite",
+      "calcium_absorption_gi",
+      "calcium_albumin_correction",
+      "calcium_pth_secretion",
+      "capacitance",
+      "capillary_pressure",
+      "carbohydrate_oxidation_indirect_calorimetry",
+      "carrier_transport",
+      "cck_response",
+      "cck_satiety",
+      "chemiosmotic_coupling",
+      "chronic_respiratory_acidosis_hco3",
+      "chronic_respiratory_alkalosis_hco3",
+      "ckd_epi_2021",
+      "clearance",
+      "co2_response",
+      "cockcroft_gault",
+      "colloid_osmotic_pressure",
+      "compliance",
+      "coronary_perfusion_pressure",
+      "coulomb_law",
+      "countercurrent_multiplication",
+      "creatinine_clearance_typed",
+      "critical_micellar_concentration",
+      "dead_space_bohr",
+      "dendrite_input_resistance",
+      "depression",
+      "diffusing_capacity",
+      "diffusion_time",
+      "direction_selectivity_index",
+      "dissolved_co2",
+      "donnan_ratio",
+      "double_exponential_synapse",
+      "driving_force_ion",
+      "driving_pressure",
+      "dynamic_compliance",
+      "edpvr",
+      "einthoven_lead_relation",
+      "ejection_fraction",
+      "electric_dipole_moment",
+      "elimination_rate_constant",
+      "energy_expenditure_indirect_calorimetry",
+      "enthalpy",
+      "espvr",
+      "extraction_ratio",
+      "facilitation",
+      "fat_oxidation_indirect_calorimetry",
+      "fe_na",
+      "fe_urea",
+      "fechner_law",
+      "feedback_gain",
+      "feedback_target_dynamics",
+      "feedback_tropic_dynamics",
+      "fev1_fvc_ratio",
+      "fick_first_law",
+      "ficks_law_diffusion",
+      "fractional_water_reabsorption",
+      "frank_starling",
+      "free_water_clearance",
+      "functional_residual_capacity",
+      "funny_current",
+      "fusion_frequency",
+      "gastric_acid_output",
+      "gastric_emptying_liquid",
+      "gastric_emptying_solid",
+      "gastrin_acid_response",
+      "gi_enzyme_kinetics",
+      "gi_slow_wave",
+      "gibbs_free_energy",
+      "glomerular_nfp",
+      "glp1_insulin_response",
+      "glut5_fructose",
+      "gto_response",
+      "harris_benedict_bmr",
+      "heart_rate_autonomic",
+      "hematocrit",
+      "henderson_hasselbalch",
+      "hepatic_blood_flow",
+      "hh_gating_h",
+      "hh_gating_m",
+      "hh_gating_n",
+      "hh_leak_current",
+      "hh_membrane_current",
+      "hill_equation",
+      "hill_force_velocity",
+      "hill_saturation",
+      "hormone_half_life",
+      "hormone_kd",
+      "hpa_crh_dynamics",
+      "hursh_conduction_velocity",
+      "huxley_attachment_rate",
+      "huxley_detachment_rate",
+      "hydraulic_resistance",
+      "hydrostatic_pressure",
+      "hypoxic_response",
+      "ideal_gas_law",
+      "incretin_effect",
+      "indicator_dilution_cardiac_output",
+      "inspiratory_capacity",
+      "ionic_current",
+      "iron_absorption_gi",
+      "k_nernst_potential",
+      "kassirer_bleich_hydrogen_ion",
+      "kelvin_voigt_model",
+      "laplace_cylinder",
+      "laplace_pressure",
+      "laplace_sphere",
+      "lean_body_mass",
+      "lennard_jones_potential",
+      "lithogenic_index",
+      "maintenance_infusion_rate",
+      "maxwell_model",
+      "mdrd_gfr",
+      "mean_arterial_pressure",
+      "mean_corpuscular_hemoglobin",
+      "mean_flow_velocity",
+      "medullary_gradient",
+      "membrane_capacitance",
+      "membrane_time_constant",
+      "metabolic_alkalosis_compensation",
+      "metabolic_clearance_rate",
+      "michaelis_menten",
+      "mifflin_st_jeor_ree",
+      "minute_ventilation",
+      "mixed_venous_oxygen_content",
+      "moens_korteweg_pwv",
+      "motor_unit_force",
+      "muscle_power",
+      "nak_pump_rate",
+      "ncx_reversal",
+      "net_acid_excretion",
+      "new_bicarbonate_generation",
+      "newtonian_viscosity",
+      "nmda_mg_block",
+      "norwich_sensation_magnitude",
+      "orientation_selectivity_index",
+      "osmotic_pressure",
+      "oxygen_consumption_gas_exchange",
+      "oxygenation_index",
+      "p50_bohr_ph",
+      "pah_extraction_ratio",
+      "pancreatic_bicarbonate",
+      "pancreatic_gsis",
+      "pancreatic_homa_b",
+      "pancreatic_homa_ir",
+      "partial_pressure",
+      "partition_coefficient",
+      "passive_membrane_charging",
+      "pepsin_activity",
+      "peristalsis_velocity",
+      "permeability_coefficient",
+      "persistence_length",
+      "pf_ratio",
+      "photoreceptor_response",
+      "plasma_buffer_capacity",
+      "poiseuille_flow",
+      "poisson_ratio",
+      "protein_oxidation_urinary_nitrogen",
+      "ps_product",
+      "pulse_pressure",
+      "qtc_bazett",
+      "qtc_fridericia",
+      "quantal_content",
+      "quantal_content_epp_mepp",
+      "quantal_variance",
+      "rate_force_relation",
+      "receptive_field_dog",
+      "receptor_adaptation",
+      "receptor_occupancy",
+      "redox_free_energy",
+      "reflex_gain",
+      "refractive_index",
+      "refractive_power_diopters",
+      "renal_autoregulation_index",
+      "renal_plasma_flow",
+      "renal_vascular_resistance",
+      "reproductive_lh_surge",
+      "reproductive_progesterone_temperature",
+      "respiratory_oxygen_content",
+      "respiratory_quotient",
+      "reynolds_number_airway",
+      "rohrer_equation",
+      "safety_factor",
+      "salivary_flow",
+      "secretin_bicarbonate",
+      "sglt1_glucose",
+      "shunting_inhibition",
+      "sieving_coefficient",
+      "single_channel_conductance",
+      "snells_law",
+      "sodium_clearance",
+      "solute_flux",
+      "sound_intensity_level_db",
+      "space_constant",
+      "spindle_response",
+      "standard_base_excess",
+      "standard_linear_solid",
+      "static_compliance",
+      "stdp",
+      "stevens_power_law",
+      "stokes_einstein",
+      "stool_osmotic_gap",
+      "strength_duration_weiss",
+      "stroke_volume",
+      "strong_ion_difference_apparent",
+      "surface_free_energy",
+      "surface_pressure",
+      "systemic_vascular_compliance",
+      "thin_lens_formula",
+      "total_lung_capacity",
+      "transferrin_saturation",
+      "transmural_pressure",
+      "transport_tm",
+      "ttkg",
+      "tubuloglomerular_feedback",
+      "urine_osmolality_ratio",
+      "ussing_flux_ratio",
+      "vascular_compliance",
+      "ventricular_wall_stress",
+      "vital_capacity",
+      "volume_flux",
+      "volume_of_distribution",
+      "wall_shear_stress",
+      "water_flux",
+      "water_reabsorption_flux",
+      "weak_acid_anion_charge",
+      "weber_fraction",
+      "whole_cell_conductance",
+      "winters_formula",
+      "work_of_breathing_elastic",
+      "youngs_modulus"
+    ],
+    "1": [
+      "amylase_kinetics",
+      "arterial_elastance",
+      "bernoulli_equivalent_pressure",
+      "blood_viscosity",
+      "cable_equation",
+      "calcium_vitamin_d_activation",
+      "cardiac_output",
+      "cardiac_output_fick",
+      "cheng_prusoff_ki",
+      "clearance_from_metabolic_rate",
+      "convection_diffusion_flux",
+      "corrected_anion_gap",
+      "coulomb_law_medium",
+      "delta_ratio",
+      "diffusion_conductance",
+      "dipole_potential",
+      "dlco_to_dlo2",
+      "donnan_potential",
+      "elastance",
+      "electric_field",
+      "electrochemical_potential",
+      "epsp_amplitude",
+      "ficks_membrane_flux",
+      "first_order_elimination",
+      "first_pass_effect",
+      "gfr_from_glomerular_nfp",
+      "gi_transit_time",
+      "goldman_flux",
+      "hepatic_clearance",
+      "hormone_fraction_free",
+      "hpa_acth_dynamics",
+      "huxley_attached_fraction",
+      "inspired_po2",
+      "k_secretion_driving_force",
+      "k_secretion_flux",
+      "lipase_activity_bile",
+      "lipase_kinetics",
+      "mean_cell_volume",
+      "mean_corpuscular_hemoglobin_concentration",
+      "muscle_efficiency",
+      "net_filtration_pressure",
+      "oxygen_consumption_fick",
+      "oxygen_extraction_ratio",
+      "parallel_plate_capacitor",
+      "pressure_flow",
+      "pulse_pressure_from_compliance",
+      "rate_pressure_product",
+      "receptor_fractional_occupancy",
+      "receptor_saturation_binding",
+      "respiratory_time_constant",
+      "shunt_equation",
+      "standard_free_energy",
+      "starling_filtration",
+      "stroke_work",
+      "strong_ion_difference_effective",
+      "synaptic_current",
+      "thyroid_tsh_response",
+      "tissue_oxygen_delivery",
+      "total_compliance",
+      "true_rpf_from_pah",
+      "water_absorption_gi"
+    ],
+    "2": [
+      "actual_free_energy",
+      "alveolar_gas_equation",
+      "cardiac_index",
+      "competitive_inhibition_binding",
+      "exponential_emptying",
+      "fat_absorption_efficiency",
+      "gfr_from_nfp",
+      "hormone_half_life_from_mcr",
+      "hpa_cortisol_dynamics",
+      "loading_dose",
+      "map_from_flow",
+      "nernst_equation",
+      "poiseuille_resistance",
+      "pvr_dyn",
+      "reynolds_number_blood",
+      "scatchard_analysis",
+      "scatchard_transform",
+      "starch_digestion_first_order",
+      "strong_ion_gap",
+      "systemic_oxygen_delivery",
+      "thyroid_t4_production",
+      "thyroid_tsh_dynamics",
+      "total_elastance",
+      "va_coupling_esv",
+      "womersley_number"
+    ],
+    "3": [
+      "aa_gradient",
+      "chord_conductance",
+      "filtered_load",
+      "filtration_fraction",
+      "fractional_excretion",
+      "fractional_excretion_direct",
+      "gfr_normalized",
+      "ghk_potential",
+      "hh_potassium_current",
+      "hh_sodium_current",
+      "svr_dyn",
+      "thyroid_t4_dynamics",
+      "total_peripheral_resistance"
+    ],
+    "4": [
+      "excretion_mass_balance",
+      "glucose_excretion",
+      "vascular_function_curve",
+      "windkessel_time_constant"
+    ]
+  },
+  "named_dependency_chains": {
+    "membrane_to_action_potential": [
+      "nernst_equation",
+      "ghk_potential",
+      "hh_membrane_current",
+      "hh_sodium_current"
+    ],
+    "oxygen_cascade": [
+      "hill_equation",
+      "respiratory_oxygen_content",
+      "tissue_oxygen_delivery",
+      "oxygen_consumption_fick"
+    ],
+    "renal_clearance": [
+      "renal_plasma_flow",
+      "filtration_fraction",
+      "gfr_from_nfp",
+      "clearance",
+      "fractional_excretion"
+    ],
+    "hpa_axis": [
+      "hpa_crh_dynamics",
+      "hpa_acth_dynamics",
+      "hpa_cortisol_dynamics",
+      "feedback_gain"
+    ]
+  }
+}

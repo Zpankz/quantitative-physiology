@@ -1,0 +1,5 @@
+# build artifacts — the versioned source is the source of truth
+*.zip
+__pycache__/
+*.pyc
+.DS_Store

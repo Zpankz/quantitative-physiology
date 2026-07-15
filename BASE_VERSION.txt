@@ -1,0 +1,2 @@
+BASE VERSION: v3.5.0 | 367 equations | gate: run_gate GREEN
+per-domain: {'foundations': 38, 'membrane': 30, 'excitable': 29, 'nervous': 36, 'cardiovascular': 58, 'respiratory': 62, 'renal': 42, 'gastrointestinal': 41, 'endocrine': 31}

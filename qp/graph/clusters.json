@@ -1,0 +1,350 @@
+{
+  "metadata": {
+    "description": "Functional clusters of related equations across physiological domains",
+    "generated_by": "scripts/generate_clusters.py",
+    "do_not_edit_by_hand": true,
+    "num_clusters": 10
+  },
+  "clusters": {
+    "transport_mechanics": {
+      "name": "Transport & Fluid Mechanics",
+      "unifying_principle": "Pressure-driven flow in tubes",
+      "equations": [
+        {
+          "id": "poiseuille_flow",
+          "module": "scripts.foundations.transport",
+          "domain": "foundations"
+        },
+        {
+          "id": "hydraulic_resistance",
+          "module": "scripts.foundations.transport",
+          "domain": "foundations"
+        },
+        {
+          "id": "laplace_cylinder",
+          "module": "scripts.foundations.transport",
+          "domain": "foundations"
+        },
+        {
+          "id": "laplace_sphere",
+          "module": "scripts.foundations.transport",
+          "domain": "foundations"
+        },
+        {
+          "id": "poiseuille_resistance",
+          "module": "scripts.cardiovascular.hemodynamics",
+          "domain": "cardiovascular"
+        },
+        {
+          "id": "total_peripheral_resistance",
+          "module": "scripts.cardiovascular.hemodynamics",
+          "domain": "cardiovascular"
+        },
+        {
+          "id": "airway_resistance",
+          "module": "scripts.respiratory.mechanics",
+          "domain": "respiratory"
+        }
+      ]
+    },
+    "membrane_potential": {
+      "name": "Electrochemical Gradients",
+      "unifying_principle": "Ion distributions create electrical potentials",
+      "equations": [
+        {
+          "id": "nernst_equation",
+          "module": "scripts.foundations.thermodynamics",
+          "domain": "foundations"
+        },
+        {
+          "id": "donnan_potential",
+          "module": "scripts.membrane.potential",
+          "domain": "membrane"
+        },
+        {
+          "id": "donnan_ratio",
+          "module": "scripts.membrane.potential",
+          "domain": "membrane"
+        },
+        {
+          "id": "ghk_potential",
+          "module": "scripts.excitable.membrane_potential",
+          "domain": "excitable"
+        },
+        {
+          "id": "chord_conductance",
+          "module": "scripts.excitable.membrane_potential",
+          "domain": "excitable"
+        }
+      ]
+    },
+    "excitation_contraction": {
+      "name": "Excitation-Contraction Coupling",
+      "unifying_principle": "Electrical signals to mechanical force",
+      "equations": [
+        {
+          "id": "hh_membrane_current",
+          "module": "scripts.excitable.action_potential",
+          "domain": "excitable"
+        },
+        {
+          "id": "cable_equation",
+          "module": "scripts.excitable.action_potential",
+          "domain": "excitable"
+        },
+        {
+          "id": "ca_force_relationship",
+          "module": "scripts.excitable.muscle",
+          "domain": "excitable"
+        },
+        {
+          "id": "hill_force_velocity",
+          "module": "scripts.excitable.muscle",
+          "domain": "excitable"
+        },
+        {
+          "id": "espvr",
+          "module": "scripts.cardiovascular.cardiac",
+          "domain": "cardiovascular"
+        }
+      ]
+    },
+    "oxygen_cascade": {
+      "name": "Oxygen Transport Cascade",
+      "unifying_principle": "O2 from air to mitochondria",
+      "equations": [
+        {
+          "id": "alveolar_gas_equation",
+          "module": "scripts.respiratory.gas_exchange",
+          "domain": "respiratory"
+        },
+        {
+          "id": "diffusing_capacity",
+          "module": "scripts.respiratory.gas_exchange",
+          "domain": "respiratory"
+        },
+        {
+          "id": "hill_equation",
+          "module": "scripts.respiratory.oxygen_transport",
+          "domain": "respiratory"
+        },
+        {
+          "id": "blood_oxygen_content",
+          "module": "scripts.cardiovascular.blood",
+          "domain": "cardiovascular"
+        },
+        {
+          "id": "respiratory_oxygen_content",
+          "module": "scripts.respiratory.oxygen_transport",
+          "domain": "respiratory"
+        },
+        {
+          "id": "systemic_oxygen_delivery",
+          "module": "scripts.cardiovascular.blood",
+          "domain": "cardiovascular"
+        },
+        {
+          "id": "tissue_oxygen_delivery",
+          "module": "scripts.respiratory.oxygen_transport",
+          "domain": "respiratory"
+        },
+        {
+          "id": "oxygen_consumption_fick",
+          "module": "scripts.respiratory.oxygen_transport",
+          "domain": "respiratory"
+        }
+      ]
+    },
+    "acid_base": {
+      "name": "Acid-Base Homeostasis",
+      "unifying_principle": "pH regulation via buffers and compensation",
+      "equations": [
+        {
+          "id": "henderson_hasselbalch",
+          "module": "scripts.respiratory.acid_base",
+          "domain": "respiratory"
+        },
+        {
+          "id": "anion_gap",
+          "module": "scripts.respiratory.acid_base",
+          "domain": "respiratory"
+        },
+        {
+          "id": "winters_formula",
+          "module": "scripts.respiratory.acid_base",
+          "domain": "respiratory"
+        },
+        {
+          "id": "net_acid_excretion",
+          "module": "scripts.renal.acid_base",
+          "domain": "renal"
+        },
+        {
+          "id": "new_bicarbonate_generation",
+          "module": "scripts.renal.acid_base",
+          "domain": "renal"
+        }
+      ]
+    },
+    "renal_function": {
+      "name": "Renal Filtration & Clearance",
+      "unifying_principle": "Glomerular filtration and tubular processing",
+      "equations": [
+        {
+          "id": "net_filtration_pressure",
+          "module": "scripts.cardiovascular.microcirculation",
+          "domain": "cardiovascular"
+        },
+        {
+          "id": "gfr_from_nfp",
+          "module": "scripts.renal.glomerular",
+          "domain": "renal"
+        },
+        {
+          "id": "clearance",
+          "module": "scripts.renal.clearance",
+          "domain": "renal"
+        },
+        {
+          "id": "filtered_load",
+          "module": "scripts.renal.clearance",
+          "domain": "renal"
+        },
+        {
+          "id": "fractional_excretion",
+          "module": "scripts.renal.tubular",
+          "domain": "renal"
+        },
+        {
+          "id": "starling_filtration",
+          "module": "scripts.cardiovascular.microcirculation",
+          "domain": "cardiovascular"
+        }
+      ]
+    },
+    "hormone_kinetics": {
+      "name": "Hormone Kinetics & Feedback",
+      "unifying_principle": "Ligand-receptor binding and feedback loops",
+      "equations": [
+        {
+          "id": "hormone_kd",
+          "module": "scripts.endocrine.kinetics",
+          "domain": "endocrine"
+        },
+        {
+          "id": "metabolic_clearance_rate",
+          "module": "scripts.endocrine.kinetics",
+          "domain": "endocrine"
+        },
+        {
+          "id": "receptor_fractional_occupancy",
+          "module": "scripts.endocrine.receptor",
+          "domain": "endocrine"
+        },
+        {
+          "id": "feedback_gain",
+          "module": "scripts.endocrine.feedback",
+          "domain": "endocrine"
+        },
+        {
+          "id": "receptor_occupancy",
+          "module": "scripts.membrane.signaling",
+          "domain": "membrane"
+        }
+      ]
+    },
+    "synaptic_transmission": {
+      "name": "Synaptic & Neural Signaling",
+      "unifying_principle": "Chemical neurotransmission",
+      "equations": [
+        {
+          "id": "quantal_content",
+          "module": "scripts.nervous.synaptic",
+          "domain": "nervous"
+        },
+        {
+          "id": "synaptic_current",
+          "module": "scripts.nervous.synaptic",
+          "domain": "nervous"
+        },
+        {
+          "id": "epsp_amplitude",
+          "module": "scripts.nervous.synaptic",
+          "domain": "nervous"
+        },
+        {
+          "id": "stdp",
+          "module": "scripts.nervous.plasticity",
+          "domain": "nervous"
+        },
+        {
+          "id": "safety_factor",
+          "module": "scripts.excitable.synapse",
+          "domain": "excitable"
+        }
+      ]
+    },
+    "gastrointestinal_function": {
+      "name": "GI Secretion & Absorption",
+      "unifying_principle": "Digestion and nutrient absorption",
+      "equations": [
+        {
+          "id": "gastric_acid_output",
+          "module": "scripts.gastrointestinal.secretion",
+          "domain": "gastrointestinal"
+        },
+        {
+          "id": "gi_enzyme_kinetics",
+          "module": "scripts.gastrointestinal.digestion",
+          "domain": "gastrointestinal"
+        },
+        {
+          "id": "sglt1_glucose",
+          "module": "scripts.gastrointestinal.absorption",
+          "domain": "gastrointestinal"
+        },
+        {
+          "id": "hepatic_clearance",
+          "module": "scripts.gastrointestinal.liver",
+          "domain": "gastrointestinal"
+        },
+        {
+          "id": "incretin_effect",
+          "module": "scripts.gastrointestinal.hormones",
+          "domain": "gastrointestinal"
+        }
+      ]
+    },
+    "cardiovascular_regulation": {
+      "name": "CV Regulation & Control",
+      "unifying_principle": "Blood pressure and volume regulation",
+      "equations": [
+        {
+          "id": "cardiac_output",
+          "module": "scripts.cardiovascular.cardiac",
+          "domain": "cardiovascular"
+        },
+        {
+          "id": "mean_arterial_pressure",
+          "module": "scripts.cardiovascular.hemodynamics",
+          "domain": "cardiovascular"
+        },
+        {
+          "id": "baroreceptor_sensitivity",
+          "module": "scripts.cardiovascular.microcirculation",
+          "domain": "cardiovascular"
+        },
+        {
+          "id": "compliance",
+          "module": "scripts.respiratory.mechanics",
+          "domain": "respiratory"
+        },
+        {
+          "id": "adh_water_permeability",
+          "module": "scripts.renal.concentration",
+          "domain": "renal"
+        }
+      ]
+    }
+  }
+}
